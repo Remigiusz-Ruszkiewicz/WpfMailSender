@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfMailSender.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMailSender"
+        mc:Ignorable="d"
+        Title="MailSender" Height="450" Width="800">
+    <Grid>
+        <Label Content="Od" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbTo" HorizontalAlignment="Left" Height="23" Margin="51,45,0,0" TextWrapping="Wrap" Text="RemikR2000@interia.pl" VerticalAlignment="Top" Width="390"/>
+        <Label Content="Do" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbFrom" HorizontalAlignment="Left" Height="23" Margin="51,14,0,0" TextWrapping="Wrap" Text="kurs.csharp12345@gmail.com" VerticalAlignment="Top" Width="390"/>
+        <TextBox x:Name="tbTitle" HorizontalAlignment="Left" Height="23" Margin="51,76,0,0" TextWrapping="Wrap" Text="Test Google" VerticalAlignment="Top" Width="390"/>
+        <Label Content="Tytuł" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Treść" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.056,-0.385"/>
+        <RichTextBox x:Name="rtbBody" HorizontalAlignment="Left" Height="100" Margin="51,116,0,0" VerticalAlignment="Top" Width="390">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="Testowa treść"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button Content="Wybierz" HorizontalAlignment="Left" Margin="74,389,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Label Content="Załącznik" HorizontalAlignment="Left" Margin="10,383,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lFile" Content="...." HorizontalAlignment="Left" Margin="154,383,0,0" VerticalAlignment="Top" Width="287"/>
+        <Button Content="Wyślij" HorizontalAlignment="Left" Margin="682,359,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="Button_Click"/>
+
+    </Grid>
+</Window>
